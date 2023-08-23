@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
+
+	//another APIs for subscribing
+	// http.HandleFunc("/subscribe", subscribe)
+
 	http.HandleFunc("/webhook", handleWebhook)
 	fmt.Println("Server Client started on :8080")
 	http.ListenAndServe(":8080", nil)
